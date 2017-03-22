@@ -15,4 +15,4 @@ WORKDIR /qgisserver
 
 ENTRYPOINT ["/bin/sh", "-c"]
 
-CMD ["spawn-fcgi -f /usr/lib/cgi-bin/qgis_mapserv.fcgi -s /run/qgisserver/fcgi.sock -M 777 -F $FCGICHILDREN && tail -f /dev/null"]
+CMD ["spawn-fcgi -f /usr/lib/cgi-bin/qgis_mapserv.fcgi -s /run/qgisserver/fastcgi.sock -M 777 -F $FCGICHILDREN && tail -f /dev/null"]
