@@ -5,6 +5,7 @@ RUN echo 'deb http://qgis.org/debian xenial main' >> /etc/apt/sources.list \
     qgis-server \
     spawn-fcgi \
     multiwatch \
+    cifs-utils \
  && rm -rf /var/lib/apt/lists/* \
  && mkdir -p /run/qgisserver /qgisserver
 
