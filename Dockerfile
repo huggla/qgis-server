@@ -4,9 +4,7 @@ RUN echo 'deb http://qgis.org/debian xenial main' >> /etc/apt/sources.list \
  && apt-get update && apt-get install -y --allow-unauthenticated \
     qgis-server \
     spawn-fcgi \
-    multiwatch \
-    cifs-utils \
-    mount \
+    multiwatch
  && rm -rf /var/lib/apt/lists/* \
  && mkdir -p /run/qgisserver /qgisserver
 
