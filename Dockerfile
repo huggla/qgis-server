@@ -1,7 +1,7 @@
 FROM blitznote/debootstrap-amd64:16.04
 
 RUN echo 'deb http://qgis.org/debian xenial main' >> /etc/apt/sources.list \
- && /usr/bin/get-gpg-key CAEB3DC3BDF7FB45 | apt-key add \
+ && /usr/bin/get-gpg-key 61E0A086749E463EDE50 2255CAEB3DC3BDF7FB45 | apt-key add \
  && apt-get update && apt-get install -y \
     qgis-server \
     spawn-fcgi \
