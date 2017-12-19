@@ -9,8 +9,6 @@ RUN echo 'deb http://qgis.org/debian xenial main' >> /etc/apt/sources.list \
  && rm -rf /var/lib/apt/lists/* \
  && mkdir -p /run/qgisserver /qgisserver
 
-VOLUME /run/qgisserver /qgisserver
-
 ENV FCGICHILDREN=1
 
 WORKDIR /qgisserver
